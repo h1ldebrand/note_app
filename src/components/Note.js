@@ -7,9 +7,13 @@ class Note extends Component{
     }
 
     render(){
+        const {
+            children,
+            color,
+            } = this.props;
         return(
-            <div>
-                Hei, I am Note!
+            <div className="note" style={{backgroundColor : color}}>
+                {children}
             </div>
         )
     }
